@@ -8,13 +8,13 @@ terraform {
 
 provider "aws" {
   profile                 = "default"
-  region                  = "us-east-1"
-  shared_credentials_file = "C:\Users\17813\.aws\credentials"
+  region                  = "us-east-2"
+  shared_credentials_file = "~/.aws/credentials"
 }
 
 // AWS Resources
-resource "aws_s3_bucket" "per_scholas_test" {
-  bucket = "ps_test"
+resource "aws_s3_bucket" "ssrful-ps" {
+  bucket = "ssrful-terraform"
   acl    = "private"
 }
 
